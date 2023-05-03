@@ -1,0 +1,61 @@
+
+
+// * {
+//   background-image: url('https://png.pngtree.com/background/20220726/original/pngtree-abstract-futuristic-technology-background-picture-image_1819044.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: fixed;
+// }
+
+ .navbar {
+  font-size: 30px;
+  border-color: beige;
+  color: beige;
+  border: solid;
+  margin: 4px;
+  height: 67px;
+  padding: 6px;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  // margin-right: 250px;
+}
+
+
+.overView {
+  height: 800px;
+  width: 100%;
+  display: flex;
+}
+
+.dashboardView {
+  width: 10%;
+  border: 2px solid;
+  display: flex;
+  color: bisque;
+  flex-direction: column;
+  
+}
+
+button {
+  margin-top: 10px;
+  font-size: 20px;
+  // justify-content:stretch;
+  width: 100%;
+  margin-left: 0px;
+}
+
+// button:hover {
+//   background-color: rgb(156, 26, 26);
+//   color: rgba(180, 18, 18, 0.729);
+//   font-size: 45px;
+//   // transition: font-size 0.3s ease;
+// }
+
+.contentView {
+  width: 80%;
+  border: 2px solid;
+  display: flex;
+  color: bisque;
+  flex-direction: column;
+}

@@ -1,0 +1,51 @@
+
+
+
+<div class="navbar1">
+  <p style="color: rgb(8, 10, 10); font-size: 20px;">View Profile Page</p>
+</div>
+
+
+ <div class="navbar">
+  <button style="color: rgb(8, 11, 11);" routerLink="">HOME</button>
+</div>
+<div class="navbar1">
+  <!-- <button type="button" class="logout-button" (click)="logout()">Logout</button> -->
+
+</div>
+
+ <div class="overView">
+  <div class="dashboardView">
+    <button style="color: rgb(123, 188, 188)" (click)="displayMessages()">Message</button>
+    <button style="color: rgb(122, 192, 192)" (click)="displayPosts()">Posts</button>
+    <!-- <button style="color: rgb(100, 164, 164)" (click)="displayComments()">Comments</button> -->
+    <button style="color: rgb(107, 185, 185)" (click)="displayFriends()">Friends</button>
+    <button type="button" class="logout-button" (click)="logout()">Logout</button>
+  </div>
+
+
+  <div class="contentView">
+    <div *ngIf="showMessages">
+      <app-messages *ngIf="displayMessages"></app-messages>
+    </div>
+
+    <div *ngIf="showPosts">
+      <app-posts *ngIf="displayPosts"></app-posts> 
+      <!-- Your posts component content goes here -->
+     </div>
+
+    <!-- <div *ngIf="showComments">
+      <app-comments *ngIf="displayComments"></app-comments> 
+     </div> -->
+
+    <div *ngIf="showFriends">
+      <app-friends *ngIf="displayFriends"></app-friends>
+      <!-- Your friends component content goes here -->
+    </div>
+    
+
+  </div>
+</div>
+
+
+

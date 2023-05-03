@@ -1,0 +1,36 @@
+<!-- 
+
+<div class="login-container">
+  <h2 style="color: blueviolet">Login</h2>
+  <form>
+    <div>
+      <label style="color: aqua;" for="username">Username</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username">
+    </div>
+    <div>
+      <label style="color: aqua;" for="password">Password</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password">
+    </div>
+    <button type="submit" (click)="login()">Login</button>
+  </form><br>
+  <p style="color: beige;">OR</p><br>
+  <button class="center-button1" routerLink="signup">SignUp</button><br>
+</div> -->
+
+<div class="login-container">
+  <h2 class="blueviolet">Login</h2>
+  <form class="form">
+    <div class="form-field">
+      <label class="aqua" for="username">Username</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" class="input">
+    </div>
+    <div class="form-field">
+      <label class="aqua" for="password">Password</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" class="input">
+    </div>
+    <button style="color: rgb(14, 14, 14);" type="submit" (click)="login()" class="submit-button">Login</button>
+  </form>
+  <p class="beige">OR</p>
+  <button class="center-button1" routerLink="signup">SignUp</button>
+</div>
+

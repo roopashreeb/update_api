@@ -1,0 +1,137 @@
+// .post-list {
+//     height: 500px; /* set the height of the container */
+//     overflow-y: scroll; /* add scroll to the y-axis */
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//   }
+  
+//   .post {
+//     background-color: rgb(31, 107, 195);
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .post-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 10px;
+//   }
+  
+//   .post-title {
+//     font-size: 1.2rem;
+//     font-weight: bold;
+//   }
+  
+//   .post-timestamp {
+//     font-size: 0.8rem;
+//     color: gray;
+//   }
+  
+//   .post-body {
+//     font-size: 1rem;
+//     line-height: 1.5;
+//   }
+  
+//   .post-image {
+//     margin-top: 10px;
+//   }
+  
+//   .post-image img {
+//     max-width: 100%;
+//     border-radius: 5px;
+//   }
+
+// * {
+//   background-image: url('https://png.pngtree.com/background/20220726/original/pngtree-abstract-futuristic-technology-background-picture-image_1819044.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: fixed;
+// }
+
+.post-list {
+      height: 500px; 
+      overflow-y: scroll; 
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+.post {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #080606;
+  border-radius: 5px;
+  
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  small {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+  }
+
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"], textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #070606;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #0062cc;
+      }
+    }
+  }
+
+  .comments {
+    margin-top: 20px;
+    border-top: 1px solid #090808;
+    padding-top: 20px;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #030303;
+
+      p:first-of-type {
+        font-weight: bold;
+      }
+
+      small {
+        margin-top: 10px;
+        color: #999;
+      }
+    }
+  }
+}

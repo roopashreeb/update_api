@@ -1,0 +1,48 @@
+<!-- <div class="friends-container">
+    <div class="friends-list">
+      <h2>Friends List</h2>
+      <ul>
+        <li *ngFor="let friend of friends; let i = index">
+          {{ friend.name }} ({{ friend.age }} years old)
+          <button (click)="removeFriend(i)">Remove</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="add-friend">
+      <h2>Add Friend</h2>
+      <form (submit)="addFriend(newFriend)">
+        <label>
+          Name:
+          <input [(ngModel)]="newFriend.name" name="name" type="text" required>
+        </label>
+        <label>
+          Age:
+          <input [(ngModel)]="newFriend.age" name="age" type="number" required>
+        </label>
+        <label>
+          Email:
+          <input [(ngModel)]="newFriend.email" name="email" type="email" required>
+        </label>
+        <button type="submit">Add Friend</button>
+      </form>
+    </div>
+  </div>
+   -->
+
+   <div class="friends-container">
+    <h2 style="color: #000;">My Friends</h2>
+  
+    <form (submit)="addFriend(nameInput.value); nameInput.value=''">
+      <input style="color: rgb(19, 19, 18);" type="text" placeholder="Name" [(ngModel)]="name" #nameInput>
+      <button style="color: #000;" type="submit">Add Friend</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let friend of friends; let i = index">
+        <span style="color: #000;">{{ friend.name }}</span>
+        <button style="color: #000;" (click)="removeFriend(i)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,68 @@
+<!-- 
+
+<div class="post-list">
+    <div *ngFor="let post of posts" class="post">
+      <div class="post-header">
+        <div class="post-title">{{ post.title }}</div>
+        <div class="post-timestamp">{{ post.timestamp }}</div>
+      </div>
+      <div class="post-body">{{ post.body }}</div>
+      <div *ngIf="post.image" class="post-image">
+        <img [src]="post.image" alt="Post Image">
+      </div>
+    </div>
+  </div>
+  
+
+ -->
+<!--  
+ <div class="post-list">
+  <div *ngFor="let post of posts" class="post">
+    <div class="post-header">
+      <div class="post-title">{{ post.title }}</div>
+      <div class="post-timestamp">{{ post.timestamp | date:'MMM d, y h:mm a' }}</div>
+    </div>
+    <div class="post-body">{{ post.body }}</div>
+  </div>
+</div> -->
+
+
+
+<div class="post-list">
+<div class="post" *ngFor="let post of posts">
+  <h2 style="color: black;">{{ post.title }}</h2>
+  <p  style="color: black;">{{ post.body }}</p>
+  <small  style="color: black;">{{ post.timestamp | date }}</small>
+
+  <!-- Add Comment Form -->
+  <form (submit)="addComment(post, authorInput.value, commentInput.value)">
+    <input style="color: rgb(14, 13, 12);" type="text" placeholder="Your name" #authorInput required>
+    <textarea style="color: rgb(14, 13, 12);" placeholder="Your comment" #commentInput required></textarea>
+    <button type="submit">Add Comment</button>
+  </form>
+
+  <!-- Display Comments -->
+  <div class="comments" *ngIf="post.comments.length">
+    <h3 style="color: black;">Comments:</h3>
+    <div style="color: black;" class="comment" *ngFor="let comment of post.comments">
+      <p style="color: black;">{{ comment.author }} said:</p>
+      <p style="color: black;">{{ comment.text }}</p>
+      <small style="color: black;">{{ comment.timestamp | date }}</small>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<button (click)="goToDashboard()">Go Back</button> -->

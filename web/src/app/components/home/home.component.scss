@@ -1,0 +1,51 @@
+
+//  *{
+//   background-image: url(https://cdn5.vectorstock.com/i/1000x1000/64/69/background-of-social-media-icons-vector-4046469.jpg);
+//  }
+ .center-button {
+    background-color: #00ADEF;
+    border: 2px solid;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    margin-top: 250px;
+    margin-left: 500px;
+
+    &:hover {
+      background-color: #5c50dd;
+    }
+  
+    &:active {
+      background-color: #005e8e;
+      transform: translateY(1px);
+    }
+  }
+  .center-button1 {
+    background-color: #00ADEF;
+    border: 2px solid;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    margin-left: 300px;
+    margin-top: 200px;
+    &:hover {
+      background-color: #5c50dd;
+    }
+  
+    &:active {
+      background-color: #005e8e;
+      transform: translateY(1px);
+    }
+  }
+  
+ 
+
+ 

@@ -1,0 +1,58 @@
+.edit-profile-form {
+    margin-top: 20px;
+  
+    .form-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="file"] {
+        display: block;
+        margin-top: 0.5rem;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #0a0707;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 1.4;
+        transition: border-color 0.2s ease-in-out;
+  
+        &:focus {
+          outline: none;
+          border-color: #080909;
+        }
+      }
+  
+      textarea {
+        resize: vertical;
+      }
+    }
+  
+    button[type="submit"] {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #114e98;
+      color: #fff;
+      border: 2px solid;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+  
+      &:hover {
+        background-color: #050709;
+      }
+    }
+  }
+ 
+  
+  
